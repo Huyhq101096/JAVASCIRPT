@@ -1,0 +1,36 @@
+.row {
+    margin-top: 1%;
+}
+#send {
+    margin-top: 2%;
+    background-color: green;
+    
+}
+
+#send:hover {
+    color: yellow;
+}
+
+.point {
+    background-color: gray;
+}
+.point:hover {
+    color: red;
+}
+
+
+table {
+    width: 100%;
+}
+
+th,td {
+    border: 1px solid black;
+}
+
+.errors {
+    color: red;
+    margin-left: 25%;
+}
+.xeploai {
+    color: red;
+}

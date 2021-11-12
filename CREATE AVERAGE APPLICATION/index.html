@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">  
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+    <script type="text/javascript" src="main.js" rel='stylesheet'></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" class="container text-center">
+        <h1>Class Marksheet</h1>
+        <div class='row'>
+            <p class="col-md-3">Họ tên: </p>
+            <input type="text" class="col-md-8" id="textname">
+            <span class="errors errors_name" style="display: none;"></span>
+        </div>
+        <div class='row'>
+            <p class="col-md-3">Điểm Toán: </p>
+            <input type="text" class="col-md-8" id="textmath">
+            <span class="errors errors_math" style="display: none;"></span>
+        </div>
+        <div class='row'>
+            <p class="col-md-3">Điểm Lý: </p>
+            <input type="text" class="col-md-8" id="textphysical">
+            <span class="errors errors_physical" style="display: none;"></span>
+        </div>
+        <div class='row'>
+            <p class="col-md-3">Điểm Hóa: </p>
+            <input type="text" class="col-md-8" id="textchemistry">
+            <span class="errors errors_chemistry" style="display: none;"></span>
+        </div>
+        <button type='button' id="send">Nhập</button>
+    </form>
+
+    <div class="container">
+        <div class="row text-center">
+            <table id="mytable">
+                <tr>
+                    <th style="width: 10%;">STT</th>
+                    <th style="width: 48%;">HỌ TÊN</th>
+                    <th style="width: 10%;">ĐIỂM TOÁN</th>
+                    <th style="width: 10%;">ĐIỂM LÝ</th>
+                    <th style="width: 10%;">ĐIỂM HÓA</th>
+                    <th style="width: 12%;">TRUNG BÌNH</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="container text-center">
+        <button type="button" id="avg" class="point">Điểm Trung Bình</button>
+        <button type="button" id="rang" class="point">Xếp loại học sinh</button>
+        <button type='button' id='delete-row' class="point">Xóa hàng</button>
+    </div>
+</body>
+</html>
